@@ -14,3 +14,4 @@ In OS-X environments the result file is opened automatically after the rest run.
 The script `checklink-oberwiesenfeld-tech.sh` returns 
 - 1 : if broken links are present
 - 0 : if no broken links are present
+
