@@ -9,7 +9,7 @@ The report is written to a sub directory called results. It contains the html re
 
 In OS-X environments the result file is opened automatically after the rest run.
 
-## Return values
+## Script Return Values
 
 The script `checklink-oberwiesenfeld-tech.sh` returns 
 - 1 : if broken links are present
