@@ -3,10 +3,9 @@
 # --suppress-broken code "-1" steht für links die durch robots.txt untersagt sind.
 #
 
-SCRIPT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
+readonly script_path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 readonly result_timestamp=$(date "+%Y_%m_%d_%H_%M_%S")
-readonly result_dir=${SCRIPT_PATH}/results
+readonly result_dir=${script_path}/results
 readonly result_file=${result_dir}/results_${result_timestamp}.html
 
 if [[ ! -d ${result_dir} ]]; then
@@ -33,6 +32,9 @@ docker run f800r/checklink:latest \
   --suppress-broken -1:"https://public-api.wordpress.com/oembed/?format=xml&url=https%3A%2F%2Foberwiesenfeld.tech%2Fdatenschutz%2F&for=wpcom-auto-discovery" \
   --suppress-broken -1:"https://public-api.wordpress.com/oembed/?format=json&url=https%3A%2F%2Foberwiesenfeld.tech%2F2018%2F06%2F14%2Fkolbenringe%2F&for=wpcom-auto-discovery" \
   --suppress-broken -1:"https://public-api.wordpress.com/oembed/?format=xml&url=https%3A%2F%2Foberwiesenfeld.tech%2F2018%2F06%2F14%2Fkolbenringe%2F&for=wpcom-auto-discovery" \
+  --suppress-broken -1:"https://public-api.wordpress.com/oembed/?format=json&url=https%3A%2F%2Foberwiesenfeld.tech%2F2019%2F04%2F22%2Freitwagen%2F&for=wpcom-auto-discovery" \
+  --suppress-broken -1:"https://public-api.wordpress.com/oembed/?format=xml&url=https%3A%2F%2Foberwiesenfeld.tech%2F2019%2F04%2F22%2Freitwagen%2F&for=wpcom-auto-discovery" \
+  --suppress-broken -1:"https://stats.wp.com/w.js?60" \
   --suppress-broken 405:"https://www.instagram.com/unsupportedbrowser/" \
   --suppress-broken 405:"http://instagram.com/about/legal/privacy/" \
   --suppress-broken 403:"https://vimeo.com/privacy" \
@@ -52,14 +54,14 @@ docker run f800r/checklink:latest \
   https://oberwiesenfeld.tech | \
   tee ${result_file}
 
-readonly broken_links=$(grep -i "broken links" ${result_file} | wc -l|tr -d '[:space:]')
-echo "broken-links=${broken_links}"
+readonly number_of_broken_links=$(grep -i "broken links" ${result_file}|wc -l|tr -d '[:space:]')
+echo "broken-links=${number_of_broken_links}"
 
 if [[ "${OSTYPE}" == *darwin* ]]; then
   open ${result_file}
 fi
 
-if [[ "${broken_links}" > "0" ]]; then
+if [[ "${number_of_broken_links}" > "0" ]]; then
   exit 1
 fi
 
