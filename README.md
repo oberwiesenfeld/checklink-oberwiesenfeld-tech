@@ -15,3 +15,17 @@ The script `checklink-oberwiesenfeld-tech.sh` returns
 - 1 : if broken links are present
 - 0 : if no broken links are present
 
+## Maven 
+
+A Maven interface is included.
+
+### Run the Checklink Test by means of Maven
+```
+mvn test
+```
+
+### Clean 
+All results older than 30 days are removed. 
+```
+mvn clean
+```
