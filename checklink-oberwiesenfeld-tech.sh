@@ -34,6 +34,9 @@ docker run f800r/checklink:latest \
   --suppress-broken -1:"https://public-api.wordpress.com/oembed/?format=xml&url=https%3A%2F%2Foberwiesenfeld.tech%2F2018%2F06%2F14%2Fkolbenringe%2F&for=wpcom-auto-discovery" \
   --suppress-broken -1:"https://public-api.wordpress.com/oembed/?format=json&url=https%3A%2F%2Foberwiesenfeld.tech%2F2019%2F04%2F22%2Freitwagen%2F&for=wpcom-auto-discovery" \
   --suppress-broken -1:"https://public-api.wordpress.com/oembed/?format=xml&url=https%3A%2F%2Foberwiesenfeld.tech%2F2019%2F04%2F22%2Freitwagen%2F&for=wpcom-auto-discovery" \
+  --suppress-broken -1:"https://public-api.wordpress.com/oembed/?format=json&url=https%3A%2F%2Foberwiesenfeld.tech%2F2019%2F06%2F12%2Fbmw-r-18%2F&for=wpcom-auto-discovery" \
+  --suppress-broken -1:"https://public-api.wordpress.com/oembed/?format=xml&url=https%3A%2F%2Foberwiesenfeld.tech%2F2019%2F06%2F12%2Fbmw-r-18%2F&for=wpcom-auto-discovery" \
+  --suppress-broken -1:"https://oberwiesenfeld.tech/2019/06/12/bmw-r-18/?share=facebook" \
   --suppress-broken -1:"https://stats.wp.com/w.js?60" \
   --suppress-broken 405:"https://www.instagram.com/unsupportedbrowser/" \
   --suppress-broken 405:"http://instagram.com/about/legal/privacy/" \
