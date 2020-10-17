@@ -1,4 +1,3 @@
-sudo: required
 before_install:
 - docker pull f800r/checklink:latest
 services:
