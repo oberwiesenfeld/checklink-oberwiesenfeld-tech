@@ -20,12 +20,12 @@ The script `checklink-oberwiesenfeld-tech.sh` returns
 A Maven interface is included.
 
 ### Run the Checklink Test by means of Maven
-```
+```bash
 mvn test
 ```
 
 ### Clean 
-All results older than 30 days are removed. 
-```
+All local results older than 30 days are removed. 
+```bash
 mvn clean
 ```
