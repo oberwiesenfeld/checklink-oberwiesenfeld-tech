@@ -7,7 +7,7 @@ The report is written to a sub directory called results. It contains the html re
 ./checklink-oberwiesenfeld-tech.sh
 ```
 
-In OS-X environments the result file is opened automatically after the rest run.
+In OS-X environments the result file is opened automatically after the test run.
 
 ## Script Return Values
 
