@@ -1,5 +1,4 @@
-[![RunLinkCheck](https://github.com/oberwiesenfeld/checklink-oberwiesenfeld-tech/actions/workflows/blank.yml/badge.svg)](https://github.com/oberwiesenfeld/checklink-oberwiesenfeld-tech/actions/workflows/blank.yml)  [![Build Status](https://travis-ci.org/oberwiesenfeld/checklink-oberwiesenfeld-tech.png)](https://travis-ci.org/oberwiesenfeld/checklink-oberwiesenfeld-tech)
-# Check Link Utility
+# Check Link Utility [![RunLinkCheck](https://github.com/oberwiesenfeld/checklink-oberwiesenfeld-tech/actions/workflows/blank.yml/badge.svg)](https://github.com/oberwiesenfeld/checklink-oberwiesenfeld-tech/actions/workflows/blank.yml)  [![Build Status](https://travis-ci.org/oberwiesenfeld/checklink-oberwiesenfeld-tech.png)](https://travis-ci.org/oberwiesenfeld/checklink-oberwiesenfeld-tech)
 
 Run a check to find broken links by means of a docker container build from [W3C link-checker](https://github.com/w3c/link-checker).
 The report is written to a sub directory called results. It contains the html report of the test run.
