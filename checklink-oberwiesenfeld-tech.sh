@@ -10,7 +10,7 @@ readonly result_file=${result_dir}/results_${result_timestamp}.html
 
 if [[ ! -d ${result_dir} ]]; then
   mkdir ${result_dir}
-fi  
+fi
 
 docker run f800r/checklink:latest \
   --html \
@@ -44,6 +44,7 @@ docker run f800r/checklink:latest \
   --suppress-broken -1:"https://stats.wp.com/w.js?61" \
   --suppress-broken -1:"http://instagram.com/about/legal/privacy/" \
   --suppress-broken 405:"https://www.instagram.com/unsupportedbrowser/" \
+  --suppress-broken 405:"https://oberwiesenfeld.tech/xmlrpc.php" \
   --suppress-broken 403:"https://vimeo.com/privacy" \
   --suppress-fragment "https://widgets.wp.com/likes/master.html?ver=20200826#ver=20200826&lang=de" \
   --suppress-fragment "https://books.google.de/books?id=Fd6sBgAAQBAJ&lpg=PA6&hl=de&pg=PP1#v=onepage&q&f=false" \
