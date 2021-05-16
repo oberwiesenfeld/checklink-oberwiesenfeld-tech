@@ -25,3 +25,14 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run Link Check
         run: ./checklink-oberwiesenfeld-tech.sh
+
+      - uses: actions/checkout@v2
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: travis
+          SLACK_COLOR: ${{ job.status }} # or a specific color like 'green' or '#ff00ff'
+          SLACK_MESSAGE: 'Job Stats ${{ job.status }}'
+          SLACK_TITLE: Post Title
+          SLACK_USERNAME: engineering@oberwiesenfeld.tech
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
