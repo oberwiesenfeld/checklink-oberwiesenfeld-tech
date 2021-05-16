@@ -45,7 +45,6 @@ docker run f800r/checklink:latest \
   --suppress-broken -1:"https://oberwiesenfeld.tech/2019/06/12/bmw-r-18/?share=facebook" \
   --suppress-broken -1:"https://oberwiesenfeld.tech/2019/11/17/kennzeichen/?share=facebook" \
   --suppress-broken -1:"https://www.youtube.com/results?search_query=%23ABavarianSoulstory" \
-  --suppress-broken -1:"https://www.bonhams.com/auctions/16535/lot/18/" \
   --suppress-broken -1:"https://stats.wp.com/w.js?61" \
   --suppress-broken -1:"http://instagram.com/about/legal/privacy/" \
   --suppress-broken 403:"https://vimeo.com/privacy" \
@@ -54,6 +53,7 @@ docker run f800r/checklink:latest \
   --suppress-broken 405:"https://oberwiesenfeld.tech/xmlrpc.php" \
   --suppress-fragment "https://widgets.wp.com/likes/master.html?ver=20200826#ver=20200826&lang=de" \
   --suppress-fragment "https://books.google.de/books?id=Fd6sBgAAQBAJ&lpg=PA6&hl=de&pg=PP1#v=onepage&q&f=false" \
+  --suppress-fragment "#d30code_403" \
   --depth 2 \
   --exclude ".*https:\/\/www.instagram.com\/unsupportedbrowser\/" \
   --exclude ".*https:\/\/www.facebook.com\/unsupportedbrowser\/" \
