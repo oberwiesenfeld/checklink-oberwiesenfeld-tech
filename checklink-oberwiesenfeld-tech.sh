@@ -53,7 +53,6 @@ docker run f800r/checklink:latest \
   --suppress-broken 405:"https://oberwiesenfeld.tech/xmlrpc.php" \
   --suppress-fragment "https://widgets.wp.com/likes/master.html?ver=20200826#ver=20200826&lang=de" \
   --suppress-fragment "https://books.google.de/books?id=Fd6sBgAAQBAJ&lpg=PA6&hl=de&pg=PP1#v=onepage&q&f=false" \
-  --suppress-fragment "#d30code_403" \
   --depth 2 \
   --exclude ".*https:\/\/www.instagram.com\/unsupportedbrowser\/" \
   --exclude ".*https:\/\/www.facebook.com\/unsupportedbrowser\/" \
