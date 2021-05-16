@@ -45,6 +45,7 @@ docker run f800r/checklink:latest \
   --suppress-broken -1:"https://oberwiesenfeld.tech/2019/06/12/bmw-r-18/?share=facebook" \
   --suppress-broken -1:"https://oberwiesenfeld.tech/2019/11/17/kennzeichen/?share=facebook" \
   --suppress-broken -1:"https://www.youtube.com/results?search_query=%23ABavarianSoulstory" \
+  --suppress-broken -1:"https://www.bonhams.com/auctions/16535/lot/18/" \
   --suppress-broken -1:"https://stats.wp.com/w.js?61" \
   --suppress-broken -1:"http://instagram.com/about/legal/privacy/" \
   --suppress-broken 403:"https://vimeo.com/privacy" \
