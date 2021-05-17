@@ -25,6 +25,7 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
+      # https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#job-context
       - name: Run Link Check
         run: ./checklink-oberwiesenfeld-tech.sh
 
@@ -34,7 +35,7 @@ jobs:
         env:
           SLACK_CHANNEL: travis
           SLACK_COLOR: ${{ job.status }} # or a specific color like 'green' or '#ff00ff'
-          SLACK_MESSAGE: 'Job Stats ${{ job.status }}'
-          SLACK_TITLE: Post Title
+          SLACK_MESSAGE: 'Job Stats ${{ job.status }}  ${{ toJSON(github) }} ${{ toJSON(job) }} ${{ toJSON(steps) }} ${{ toJSON(runner) }} ${{ toJSON(strategy) }}'
+          SLACK_TITLE: 'checklink-oberwiesenfeld-tech ${{ job.status }}'
           SLACK_USERNAME: engineering@oberwiesenfeld.tech
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
