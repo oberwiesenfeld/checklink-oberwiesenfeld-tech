@@ -15,7 +15,7 @@ fi
 docker run f800r/checklink:latest \
   --html \
   --broken \
-  --suppress-broken -1:https://stats.wp.com/w.js?59 \
+  --suppress-broken -1:https://stats.wp.com/w.js?63 \
   --suppress-broken -1:https://pixel.wp.com/b.gif?v=noscript \
   --suppress-broken -1:http://www.aboutads.info/choices/ \
   --suppress-broken -1:https://youtu.be/FhUUmTEfBkc \
