@@ -46,6 +46,7 @@ docker run f800r/checklink:latest \
   --suppress-broken -1:"https://oberwiesenfeld.tech/2019/11/17/kennzeichen/?share=facebook" \
   --suppress-broken -1:"https://www.youtube.com/results?search_query=%23ABavarianSoulstory" \
   --suppress-broken -1:"http://instagram.com/about/legal/privacy/" \
+  --suppress-broken -1:"https://subscribe.wordpress.com/" \
   --suppress-broken 403:"https://vimeo.com/privacy" \
   --suppress-broken 404:"https://cdn.ampproject.org/" \
   --suppress-broken 405:"https://www.instagram.com/unsupportedbrowser/" \
@@ -53,6 +54,7 @@ docker run f800r/checklink:latest \
   --suppress-fragment "https://widgets.wp.com/likes/master.html?ver=20200826#ver=20200826&lang=de" \
   --suppress-fragment "https://books.google.de/books?id=Fd6sBgAAQBAJ&lpg=PA6&hl=de&pg=PP1#v=onepage&q&f=false" \
   --depth 2 \
+  --location "https://oberwiesenfeld.tech" \
   --exclude ".*https:\/\/www.instagram.com\/unsupportedbrowser\/" \
   --exclude ".*https:\/\/www.facebook.com\/unsupportedbrowser\/" \
   --exclude ".*http:\/\/instagram.com\/about\/legal\/privacy\/" \
@@ -61,6 +63,10 @@ docker run f800r/checklink:latest \
   --exclude ".*http:\/\/instagram.com\/about\/legal\/privacy\/.*" \
   --exclude ".*https:\/\/r-login.wordpress.com\/remote-login.*" \
   --exclude ".*data:image.*" \
+  --exclude ".*subscribe.wordpress.com." \
+  --exclude ".*oberwiesenfeld.wordpress.com.wp-admin.*" \
+  --exclude-docs ".*subscribe.wordpress.com." \
+  --exclude-docs ".*oberwiesenfeld.wordpress.com.wp-admin.*" \
   --exclude-docs ".*https:\/\/public-api.wordpress.com\/oembed.*" \
   --exclude-docs ".*https:\/\/widgets.wp.com\/likes\/master.html.*" \
   --exclude-docs ".*http:\/\/instagram.com\/about\/legal\/privacy\/.*" \
