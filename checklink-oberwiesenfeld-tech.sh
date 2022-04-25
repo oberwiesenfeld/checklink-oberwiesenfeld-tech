@@ -64,7 +64,7 @@ docker run f800r/checklink:latest \
   --exclude ".*https:\/\/widgets.wp.com\/likes\/master.html.*" \
   --exclude ".*http:\/\/instagram.com\/about\/legal\/privacy\/.*" \
   --exclude ".*https:\/\/r-login.wordpress.com\/remote-login.*" \
-  --exclude "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzQ0MCcgd2lkdGg9JzczOScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2ZXJzaW9uPScxLjEnLz4=" \
+  --exclude ".*data.*" \
   --exclude ".*subscribe.wordpress.com." \
   --exclude ".*oberwiesenfeld.wordpress.com.wp-admin.*" \
   --exclude-docs ".*subscribe.wordpress.com." \
@@ -73,7 +73,7 @@ docker run f800r/checklink:latest \
   --exclude-docs ".*https:\/\/widgets.wp.com\/likes\/master.html.*" \
   --exclude-docs ".*http:\/\/instagram.com\/about\/legal\/privacy\/.*" \
   --exclude-docs ".*https:\/\/r-login.wordpress.com\/remote-login.*" \
-  --exclude-docs "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzQ0MCcgd2lkdGg9JzczOScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2ZXJzaW9uPScxLjEnLz4=" \
+  --exclude-docs ".*data.*" \
   https://oberwiesenfeld.tech | \
   tee ${result_file}
 
