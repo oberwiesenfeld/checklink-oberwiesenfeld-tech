@@ -47,6 +47,9 @@ docker run f800r/checklink:latest \
   --suppress-broken -1:"https://www.youtube.com/results?search_query=%23ABavarianSoulstory" \
   --suppress-broken -1:"http://instagram.com/about/legal/privacy/" \
   --suppress-broken -1:"https://subscribe.wordpress.com/" \
+  --suppress-broken -1:"https://motorradmuseum-vorchdorf.at/BMW-Geschichte/BMW-Geschichte01.html" \
+  --suppress-broken -1:"https://motorradmuseum-vorchdorf.at/Themen/Bison1922.html" \
+  --suppress-broken -1:"https://www.deutsche-biographie.de/pnd120252872.html" \
   --suppress-broken 403:"https://vimeo.com/privacy" \
   --suppress-broken 404:"https://cdn.ampproject.org/" \
   --suppress-broken 405:"https://www.instagram.com/unsupportedbrowser/" \
@@ -71,6 +74,7 @@ docker run f800r/checklink:latest \
   --exclude-docs ".*https:\/\/widgets.wp.com\/likes\/master.html.*" \
   --exclude-docs ".*http:\/\/instagram.com\/about\/legal\/privacy\/.*" \
   --exclude-docs ".*https:\/\/r-login.wordpress.com\/remote-login.*" \
+  --exclude-docs ".*data:image.*" \
   https://oberwiesenfeld.tech | \
   tee ${result_file}
 
