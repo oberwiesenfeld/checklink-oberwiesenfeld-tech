@@ -50,9 +50,11 @@ docker run f800r/checklink:latest \
   --suppress-broken -1:"https://www.deutsche-biographie.de/pnd120252872.html" \
   --suppress-broken -1:"data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzQ0MCcgd2lkdGg9JzczOScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2ZXJzaW9uPScxLjEnLz4=" \
   --suppress-broken 403:"https://vimeo.com/privacy" \
+  --suppress-broken 403:"https://yokohamahotrodcustomshow.com/hcs2018-report/show_hcs2018/" \
   --suppress-broken 404:"https://cdn.ampproject.org/" \
   --suppress-broken 405:"https://www.instagram.com/unsupportedbrowser/" \
   --suppress-broken 405:"https://oberwiesenfeld.tech/xmlrpc.php" \
+  --suppress-broken 502:"https://apps.apple.com/de/app/erste-hilfe-drk/id404519165" \
   --suppress-fragment "https://widgets.wp.com/likes/master.html?ver=20200826#ver=20200826&lang=de" \
   --suppress-fragment "https://books.google.de/books?id=Fd6sBgAAQBAJ&lpg=PA6&hl=de&pg=PP1#v=onepage&q&f=false" \
   --depth 1 \
