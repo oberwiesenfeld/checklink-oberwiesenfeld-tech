@@ -57,7 +57,7 @@ docker run f800r/checklink:latest \
   --suppress-broken 405:"https://www.instagram.com/unsupportedbrowser/" \
   --suppress-broken 405:"https://oberwiesenfeld.tech/xmlrpc.php" \
   --suppress-broken 429:"https://apps.apple.com/de/app/erste-hilfe-drk/id404519165" \
-  --suppress-broken 500:"https://apps.apple.com/de/app/erste-hilfe-drk/id404519165"   
+  --suppress-broken 500:"https://apps.apple.com/de/app/erste-hilfe-drk/id404519165" \
   --suppress-fragment "https://widgets.wp.com/likes/master.html?ver=20200826#ver=20200826&lang=de" \
   --suppress-fragment "https://books.google.de/books?id=Fd6sBgAAQBAJ&lpg=PA6&hl=de&pg=PP1#v=onepage&q&f=false" \
   --depth 1 \
