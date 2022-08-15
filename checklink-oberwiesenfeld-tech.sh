@@ -51,6 +51,7 @@ docker run f800r/checklink:latest \
   --suppress-broken -1:"https://www.deutsche-biographie.de/pnd120252872.html" \
   --suppress-broken -1:"data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzQ0MCcgd2lkdGg9JzczOScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2ZXJzaW9uPScxLjEnLz4=" \
   --suppress-broken -1:"https://apps.apple.com/de/app/erste-hilfe-drk/id404519165" \
+  --suppress-broken -1:"https://www.linkedin.com/in/gudrun-muschalla-40b3967/" \
   --suppress-broken 403:"https://vimeo.com/privacy" \
   --suppress-broken 403:"https://yokohamahotrodcustomshow.com/hcs2018-report/show_hcs2018/" \
   --suppress-broken 404:"https://cdn.ampproject.org/" \
