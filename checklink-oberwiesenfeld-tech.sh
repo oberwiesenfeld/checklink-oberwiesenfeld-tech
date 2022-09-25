@@ -9,7 +9,7 @@ readonly result_dir=${script_path}/results
 readonly result_file=${result_dir}/results_${result_timestamp}.html
 
 if [[ ! -d ${result_dir} ]]; then
-  mkdir ${result_dir}
+  mkdir "${result_dir}"
 fi
 
 docker run f800r/checklink:latest \
@@ -123,16 +123,16 @@ docker run f800r/checklink:latest \
   --exclude-docs ".*https:\/\/r-login.wordpress.com\/remote-login.*" \
   --exclude-docs ".*data.*" \
   https://oberwiesenfeld.tech | \
-  tee ${result_file}
+  tee "${result_file}"
 
-readonly number_of_broken_links=$(grep -i "broken links" ${result_file}|wc -l|tr -d '[:space:]')
+readonly number_of_broken_links=$(grep -c "broken links" "${result_file}"|tr -d '[:space:]')
 echo "broken-links=${number_of_broken_links}"
 
 if [[ "${OSTYPE}" == *darwin* ]]; then
-  open ${result_file}
+  open "${result_file}"
 fi
 
-if [[ "${number_of_broken_links}" > "0" ]]; then
+if [[ "${number_of_broken_links}" -gt "0" ]]; then
   exit 1
 fi
 
