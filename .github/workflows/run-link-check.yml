@@ -22,14 +22,14 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
       # https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#job-context
       - name: Run Link Check
         run: ./checklink-oberwiesenfeld-tech.sh
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@v2
         env:
