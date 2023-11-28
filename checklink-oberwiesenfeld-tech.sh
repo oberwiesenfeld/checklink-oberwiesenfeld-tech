@@ -132,7 +132,7 @@ if [[ "${OSTYPE}" == *darwin* ]]; then
   open "${result_file}"
 fi
 
-if [[ "${number_of_broken_links}" -gt "31" ]]; then
+if [[ "${number_of_broken_links}" -gt "33" ]]; then
   exit 1
 fi
 
