@@ -21,7 +21,7 @@ docker run f800r/checklink:latest \
   --suppress-broken -1:http://www.aboutads.info/choices/ \
   --suppress-broken -1:https://youtu.be/FhUUmTEfBkc \
   --suppress-broken -1:https://github.com/oberwiesenfeld \
-  --suppress-broken -1:https://wordpress.com/read/feeds/81514772 \
+  --suppress-broken -1:https://wordpress.com/reader/feeds/81514772 \                      
   --suppress-broken -1:https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Foberwiesenfeld.tech%252F2021%252F04%252F05%252Fm2b15%252F \
   --suppress-broken -1:https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Foberwiesenfeld.tech%252F2018%252F03%252F09%252Fin-muenchen-am-oberwiesenfeld%252F \
   --suppress-broken -1:https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Foberwiesenfeld.tech%252F2019%252F04%252F22%252Freitwagen%252F \
